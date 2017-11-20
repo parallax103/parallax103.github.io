@@ -5,7 +5,7 @@ function shadow(event) {
     var width = container.offsetWidth;
     var height = container.offsetHeight;
     
-    var walk = 80; // 80px
+    var walk = 90; // 90px
     
     var x = event.offsetX;
     var y = event.offsetY;
@@ -16,7 +16,7 @@ function shadow(event) {
     
     layers.forEach(function(layer, index) {
         layer.style.webkitTransform = `
-translate3d(${xWalk*index/15}px, ${yWalk*index/20}px, ${z}px)`; 
+translate3d(${xWalk*index/10}px, ${yWalk*index/20}px, ${z}px)`; 
     })
     
 }
